@@ -1,3 +1,5 @@
+................................1.VERSION CONTROL USING GIT AND GIT HUB.........................................
+
 touch chapter1.txt      //to create a file in current directory
 code  chapter1.txt      //to open chapter1.txt
 git init                //to initialize an empty git repository in current directory
@@ -15,7 +17,22 @@ git status
 
 //here,went to chapter3.txt and made some changes
 
-git diff chapter3.txt   //to check diff between previously commited chapter3 and current chapter 3.
+git diff chapter3.txt           //to check diff between previously commited chapter3 and current chapter 3.
 git checkout chapter3.txt       //to revert back to its previously commited state.
+
+
+............................................2.GIT REMOTE REPOSITORY......................................
+working dir--->staging area--->local repository----->remote repository
+        (git add)         (git commit)
+
+//to to github create a repo and copy its url
+
+git remote add origin https://github.com/imgaurv...         //origin->name alias|https://git..->remote repo url
+git branch -M main                                          // to change branch as default is master
+git push -u origin main                                     //origin->remote name | main->branch name
+
+........................................3.gitignore.........................................................
+
+
 
 
