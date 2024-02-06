@@ -1,0 +1,21 @@
+touch chapter1.txt      //to create a file in current directory
+code  chapter1.txt      //to open chapter1.txt
+git init                //to initialize an empty git repository in current directory
+ls -a                   //to see all files in current directory
+git status              //untracked files in red that are in working dir but not in staging area
+git add chapter1.txt    // to add chapter1 to staging area
+git commit -m "Initial commit"      //to commit chapter1 with initial message
+git log                 //to check which commits have been made
+
+touch chapter2.txt      //to create chapter2.txt
+touch chapter3.txt      //to create chapter3.txt
+git add .               //to add all files from working dir to staging area
+git commit -m "complete chapter 2 and chapter 3"     //to commit chapter 2 and chapter 3
+git status
+
+//here,went to chapter3.txt and made some changes
+
+git diff chapter3.txt   //to check diff between previously commited chapter3 and current chapter 3.
+git checkout chapter3.txt       //to revert back to its previously commited state.
+
+
