@@ -1,17 +1,17 @@
 ................................1.VERSION CONTROL USING GIT AND GIT HUB.........................................
-
-touch chapter1.txt      //to create a file in current directory
-code  chapter1.txt      //to open chapter1.txt
-git init                //to initialize an empty git repository in current directory
-ls -a                   //to see all files in current directory
-git status              //untracked files in red that are in working dir but not in staging area
-git add chapter1.txt    // to add chapter1 to staging area
+mkdir Learning-Git-github   //to create a directory
+touch chapter1.txt          //to create a file in current directory
+code  chapter1.txt          //to open chapter1.txt
+git init                    //to initialize an empty git repository in current directory
+ls -a                       //to see all files in current directory
+git status                  //untracked files in red that are in working dir but not in staging area
+git add chapter1.txt        // to add chapter1 to staging area
 git commit -m "Initial commit"      //to commit chapter1 with initial message
-git log                 //to check which commits have been made
+git log                     //to check which commits have been made
 
-touch chapter2.txt      //to create chapter2.txt
-touch chapter3.txt      //to create chapter3.txt
-git add .               //to add all files from working dir to staging area
+touch chapter2.txt          //to create chapter2.txt
+touch chapter3.txt          //to create chapter3.txt
+git add .                   //to add all files from working dir to staging area
 git commit -m "complete chapter 2 and chapter 3"     //to commit chapter 2 and chapter 3
 git status
 
@@ -33,6 +33,13 @@ git push -u origin main                                     //origin->remote nam
 
 ........................................3.gitignore.........................................................
 
+//create a .gitignore file in working dir
+//add files in it that u don't want to commit
+git rm --cached -r .                    //to remove all files from staging area
+git add .                               //to add all untracked files into staging area
+git commit -m ".gitignore file add"     //commit with some message
 
+.......................................4.CLONING..........................................................
+git clone https://github.com/acct/project_name.git    //https..->URL
 
 
