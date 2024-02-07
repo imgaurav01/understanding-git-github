@@ -40,6 +40,23 @@ git add .                               //to add all untracked files into stagin
 git commit -m ".gitignore file add"     //commit with some message
 
 .......................................4.CLONING..........................................................
-git clone https://github.com/acct/project_name.git    //https..->URL
+git clone https://github.com/acct/project_name.git    //https..->URL from remote repo to be cloned.
+
+.......................................5.BRANCHING & MERGING..............................................
+
+git branch branch_name                  //to create another branch
+git branch                              //to check all branches present and currently on which branch.
+git checkout branch_name                //to switch to branch named branch_name
+
+//to merge first go to main branch--->git checkout main
+
+git merge branch_name                   //to merge branch named branch_name
+
+........................................6.FORKING & PULL REQUESTS.......................................
+//fork the project you want to work upon
+//can clone it in your local device and make changes
+//commit those changes to your remote repository
+//create a pull request to original owner of the repo
+//origin owner after reviewing those changes can merge it to his repo if it seems fit.
 
 
